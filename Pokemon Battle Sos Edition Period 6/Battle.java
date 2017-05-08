@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class Pokemon here.
+ * Write a description of class Battle here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Pokemon
+public class Battle
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class Pokemon
+     * Constructor for objects of class Battle
      */
-    public Pokemon()
+    public Battle()
     {
         // initialise instance variables
         x = 0;
