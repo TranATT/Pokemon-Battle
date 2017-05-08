@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public interface PokemonBase
+public interface PokemonInterface
 {
     /**
      * An example of a method header - replace this comment with your own
