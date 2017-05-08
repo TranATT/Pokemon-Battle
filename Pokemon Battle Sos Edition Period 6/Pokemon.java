@@ -1,33 +1,36 @@
 
-/**
- * Write a description of class Pokemon here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Pokemon
+public class Pokemon implements PokemonInterface
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Pokemon
-     */
+    private int HP;
+    
     public Pokemon()
     {
-        // initialise instance variables
-        x = 0;
+        HP = 99;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    
+    public void attack1()
     {
-        // put your code here
-        return x + y;
+        /* not yet implemented */
+    }
+    public void attack2()
+    {
+        /* not yet implemented */
+    }
+    public void attack3()
+    {
+        /* not yet implemented */
+    }
+    public void attack4()
+    {
+        /* not yet implemented */
+    }
+    
+    public void setHP(int newHP)
+    {
+        HP = newHP;
+    }
+    public int getHP()
+    {
+        return HP;
     }
 }
