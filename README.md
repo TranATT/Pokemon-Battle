@@ -1,7 +1,8 @@
-## Pokemon Tournement Final Project
+## Pokemon Tournament Final Project
+### Made by Shrey Shah, Andy Tran, Jeremy Lawton, and Liam Thorng
 ```AP Computer Science
 ```Period 6
-
+```Taught by Sos
 
 You can use the [editor on GitHub](https://github.com/TranATT/Pokemon-Battle-APCS-6th-Period/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
