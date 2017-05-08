@@ -9,3 +9,4 @@ public interface PokemonInterface
     void setHP(int newHP);
     int getHP();
 }
+//comment
