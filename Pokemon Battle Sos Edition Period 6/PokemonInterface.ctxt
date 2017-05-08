@@ -1,5 +1,14 @@
 #BlueJ class context
-comment0.params=y
-comment0.target=int\ sampleMethod(int)
-comment0.text=\r\n\ An\ example\ of\ a\ method\ header\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ \ \ \ the\ result\ produced\ by\ sampleMethod\ \r\n
-numComments=1
+comment0.params=
+comment0.target=void\ attack1()
+comment1.params=
+comment1.target=void\ attack2()
+comment2.params=
+comment2.target=void\ attack3()
+comment3.params=
+comment3.target=void\ attack4()
+comment4.params=
+comment4.target=void\ setHP()
+comment5.params=
+comment5.target=int\ getHP()
+numComments=6
