@@ -6,6 +6,6 @@ public interface PokemonInterface
     void attack3();
     void attack4();
     
-    void setHP();
+    void setHP(int newHP);
     int getHP();
 }
