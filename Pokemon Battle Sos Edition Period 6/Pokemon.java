@@ -39,9 +39,9 @@ public class Pokemon implements PokemonInterface
     //buttons + return attack number
     }
     
-    public void setHP(int newHP)
+    public void setHP(int health)
     {
-        HP = newHP;
+        HP = health;
     }
     public int getHP()
     {
