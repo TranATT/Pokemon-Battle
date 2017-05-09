@@ -1,9 +1,13 @@
 public class Battle {
-    private Pokemon player1;
-    private Pokemon player2;
+    private Pokemon pokemon1;
+    private Pokemon pokemon2;
     
-    public Battle(Pokemon one, Pokemon two) {
-        player1 = one;
-        player2 = two;
+    public Battle(String pokemon1, String pokemon2) {
+        if (pokemon1.equals(test) || pokemon2.equals(test)) {
+            if (pokemon1.equals(test))
+                pokemon1;
+            if (pokemon2.equals(test))
+                pokemon2;
+        }
     }
 }
