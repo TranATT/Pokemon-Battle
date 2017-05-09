@@ -1,6 +1,0 @@
-
-//DUMA
-public class GUI
-{
-    
-}
