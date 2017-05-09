@@ -3,17 +3,17 @@ public class Pokemon implements PokemonInterface {
     private int HP; //the current HP of the Pokemon
     private ArrayList <Object> attacks; //list of possible attacks and their respective damage
     
-    public Pokemon() {
+    public Pokemon(String attack1, int atack1, String attack2, int atack2, String attack3, int atack3, String attack4, int atack4, int health) {
         attacks = new ArrayList <Object> ();
-        attacks.add("a1"); //name
-        attacks.add(1); //damage
-        attacks.add("a2");
-        attacks.add(2);
-        attacks.add("a3");
-        attacks.add(3);
-        attacks.add("a4");
-        attacks.add(4);
-        HP = 99;
+        attacks.add(attack1); //name
+        attacks.add(atack1);  //damage
+        attacks.add(attack2); //name
+        attacks.add(atack2);  //damage
+        attacks.add(attack3); //name
+        attacks.add(atack3);  //damage
+        attacks.add(attack4); //name
+        attacks.add(atack4);  //damage
+        HP = health;
         
     }
     
