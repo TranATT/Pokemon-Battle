@@ -1,8 +1,8 @@
 
 public class Pokemon implements PokemonInterface
 {
-    private int HP;
-    private ArrayList <Object> attacks;
+    private int HP; //the current HP of the Pokemon
+    private ArrayList <Object> attacks; //list of possible attacks and their respective damage
     /* private int attack1Damage;
     private String atStrtack1Name;
     private int attack2Damage;
@@ -15,8 +15,8 @@ public class Pokemon implements PokemonInterface
     public Pokemon()
     {
         attacks = new ArrayList <Object> ();
-        attacks.add("a1");
-        attacks.add(1);
+        attacks.add("a1"); //name
+        attacks.add(1); //damage
         attacks.add("a2");
         attacks.add(2);
         attacks.add("a3");
@@ -35,11 +35,15 @@ public class Pokemon implements PokemonInterface
         
     }
     
-    public int attack () {
-    //buttons + return attack number
+    public int attack()
+    {
+        //return attack number depending on which button is used
     }
     
-    public void setHP(int health)
+    /** 
+    *  change the current HP of the Pokemon
+    */
+    public void setHP(int health) 
     {
         HP = health;
     }
