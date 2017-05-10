@@ -1,10 +1,11 @@
 import java.util.Random;
 public class Pokemon implements PokemonInterface {
     private int HP; //the current HP of the Pokemon
-    private Random randomizer;
+    private Random randomizer; //an object to generate random numbers
+    
     public Pokemon() 
     {
-        HP = health;
+        HP = 99;
         randomizer = new Random();
     }
     
@@ -12,6 +13,11 @@ public class Pokemon implements PokemonInterface {
     {
         int damage = randomizer.nextInt(/* the attack's maximum power possible */);
         target.setHP(target.getHP() - damage);
+        if (target.getHP() <= 0)
+        {
+            /* do something to indicate that the target is dead */
+            target.setHP(0);
+        }
     }
     
     
