@@ -1,27 +1,17 @@
-
+import java.util.Random;
 public class Pokemon implements PokemonInterface {
     private int HP; //the current HP of the Pokemon
-    
+    private Random randomizer;
     public Pokemon() 
     {
         HP = health;
+        randomizer = new Random();
     }
     
-    public int attack1()
+    public int attack(Pokemon target)
     {
-        
-    }
-    public int attack2()
-    {
-
-    }
-    public int attack3()
-    {
-
-    }
-    public int attack4()
-    {
-
+        int damage = randomizer.nextInt(/* the attack's maximum power possible */);
+        target.setHP(target.getHP() - damage);
     }
     
     
