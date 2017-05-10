@@ -1,33 +1,13 @@
-
-/**
- * Write a description of class Battle here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Battle
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Battle
-     */
-    public Battle()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+public class Battle {
+    private Pokemon pokemon1;
+    private Pokemon pokemon2;
+    
+    public Battle(String pokemon1, String pokemon2) {
+        if (pokemon1.equals(test) || pokemon2.equals(test)) {
+            if (pokemon1.equals(test))
+                pokemon1;
+            if (pokemon2.equals(test))
+                pokemon2;
+        }
     }
 }
