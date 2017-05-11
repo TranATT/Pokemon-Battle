@@ -25,8 +25,7 @@ public class GUI
      {
        public void actionPerformed(ActionEvent e)
        {
-          
-          Test.testingMethod();
+          System.out.println("Tackle");
         }
          
      });
@@ -34,8 +33,7 @@ public class GUI
      {
        public void actionPerformed(ActionEvent e)
        {
-          
-          Test.testingMethod();
+          System.out.println("Heal");
         }
          
      });
@@ -43,8 +41,7 @@ public class GUI
      {
        public void actionPerformed(ActionEvent e)
        {
-          
-          Test.testingMethod();
+          System.out.println("Headbutt");
         }
          
      });
@@ -52,8 +49,7 @@ public class GUI
      {
        public void actionPerformed(ActionEvent e)
        {
-          
-          Test.testingMethod();
+          System.out.println("Growl");
         }
          
      });
@@ -80,3 +76,4 @@ public class GUI
 
 
 }
+
