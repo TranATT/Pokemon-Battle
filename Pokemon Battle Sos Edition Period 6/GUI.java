@@ -1,17 +1,17 @@
 
+
 import javax.swing.*;
 import java.awt.event.*;
 public class GUI
 {
-   public GUI()
+   public GUI(String name)
    {
-     frame();
-       
-    }
+     frame(name);    
+   }
    
-   public void frame()
+   public void frame(String name)
    {
-     JFrame f = new JFrame("Moves List");
+     JFrame f = new JFrame(name);
      f.setVisible(true);
      f.setSize(400, 400);
      f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -22,58 +22,39 @@ public class GUI
      JButton b3 = new JButton("Headbutt"); 
      JButton b4 = new JButton("Growl"); 
      b1.addActionListener(new ActionListener()
-     {
-       public void actionPerformed(ActionEvent e)
-       {
-          System.out.println("Tackle");
-        }
-         
-     });
+         {
+            public void actionPerformed(ActionEvent e)
+            {
+                System.out.println("Tackle");
+            } 
+         });
      b2.addActionListener(new ActionListener()
-     {
-       public void actionPerformed(ActionEvent e)
-       {
-          System.out.println("Heal");
-        }
-         
-     });
+          {
+              public void actionPerformed(ActionEvent e)
+              {
+                System.out.println("Heal");
+               }
+          });
      b3.addActionListener(new ActionListener()
-     {
-       public void actionPerformed(ActionEvent e)
-       {
-          System.out.println("Headbutt");
-        }
+          {
+              public void actionPerformed(ActionEvent e)
+              {
+                  System.out.println("Headbutt");
+              }
          
-     });
+          });
      b4.addActionListener(new ActionListener()
-     {
-       public void actionPerformed(ActionEvent e)
-       {
-          System.out.println("Growl");
-        }
-         
-     });
+          {
+              public void actionPerformed(ActionEvent e)
+              {
+                  System.out.println("Growl");
+              }       
+          });
+      
      p.add(b1);
      p.add(b2);
      p.add(b3);
      p.add(b4);
      f.add(p);
    }
-   
-   
-   public static void main(String arg[])
-   {
-     new GUI(); 
-       
-    }
-
-
-
-
-
-
-
-
-
 }
-
