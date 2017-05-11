@@ -1,7 +1,7 @@
 
 public interface PokemonInterface
 {
-    void attack();
+    void attack(Pokemon target);
     
     void setHP(int newHP);
     int getHP();
