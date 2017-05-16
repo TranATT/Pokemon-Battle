@@ -1,5 +1,5 @@
 ## Pokemon Tournament Final Project
-### Made by Jeremy Lawton, Andy Tran, Liam Thorng, and Shrey Shah
+### Made by Shrey Shah, Jeremy Lawton, Andy Tran, and Liam Thorng
 ```AP Computer Science
 ```Period 6
 ```Taught by Sos
