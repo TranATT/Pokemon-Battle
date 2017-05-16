@@ -9,7 +9,7 @@ public class Pokemon implements PokemonInterface {
         randomizer = new Random();
     }
     
-    public int attack(Pokemon target)
+    public void attack(Pokemon target)
     {
         int damage = randomizer.nextInt(/* the attack's maximum power possible */);
         target.setHP(target.getHP() - damage);
