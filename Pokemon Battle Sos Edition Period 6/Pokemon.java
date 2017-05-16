@@ -36,7 +36,7 @@
       }
      }
 
-     public int attacK(String name) {
+     public int attack(String name) {
       JFrame f = new JFrame(name);
       f.setVisible(true);
       f.setSize(400, 400);
