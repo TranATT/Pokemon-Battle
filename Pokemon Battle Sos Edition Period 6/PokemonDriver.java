@@ -3,7 +3,7 @@ public class PokemonDriver
 {
   public static void main(String args[])
   {
-    GUI gui = new GUI();
+    GUI gui = new GUI("Test");
     
     Random randomizer = new Random();
     //decide who goes first
