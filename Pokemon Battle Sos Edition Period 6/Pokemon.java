@@ -4,7 +4,7 @@ public class Pokemon
     private int HP; //the current HP of the Pokemon
     private Random randomizer; //an object to generate random numbers
     private boolean growlNextAttack;
-    public String theName;
+    public String theName = "pokemon";
     
     public Pokemon(String name) 
     {
