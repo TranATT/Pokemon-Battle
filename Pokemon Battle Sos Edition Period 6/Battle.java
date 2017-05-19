@@ -1,20 +1,26 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.lang.NullPointerException;
+
     public class Battle {
      private Pokemon player1;
      private Pokemon player2;
-     public Battle() {
-      choose(player1);
-      player1  = new Pokemon(chosenName);
-      choose();
-      player2  = new Pokemon(chosenName);
-      
-      System.out.println("Player one is " + player1.getName());
-      System.out.println("Player two is " + player2.getName());
+     private boolean whichPlayer1 = true;
+     
+     public Battle() 
+     {
+         choose();
+         choose();
+     
+         try {
+             System.out.println("Player one is " + player1.getName());
+             System.out.println("Player two is " + player2.getName());      
+        } catch (NullPointerException e){
+        }
      }
 
-     public P choose(Pokemon player) {
-      JFrame f = new JFrame("Pokemon Selection");
+     public void choose() {
+      final JFrame f = new JFrame("Pokemon Selection");
       f.setVisible(true);
       f.setSize(400, 400);
       f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -27,26 +33,45 @@ import java.awt.event.*;
       JButton b4 = new JButton("Hyedrill");
       b1.addActionListener(new ActionListener() {
        public void actionPerformed(ActionEvent e) {
-        chosenName = "Sos Boss";
-        player = new Pokemon("Sos Boss");        
+        if(whichPlayer1) {
+            player1 = new Pokemon("Sos Boss");      
+            System.out.println("Player 1 = Sos Boss");
+            whichPlayer1 = false;
+        } else{
+            player2 = new Pokemon("Sos Boss"); 
+            System.out.println("Player 2 = Sos Boss");
+            f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
+        }
         //System.exit(1);
        }
       });
       
       b2.addActionListener(new ActionListener() {
        public void actionPerformed(ActionEvent e) {
-        chosenName = "Bamboa";
-        System.out.println("Bamboa has been chosen.");
-        
-           //     System.exit(1);
+        if(whichPlayer1) {
+            player1 = new Pokemon("Bamboa");      
+            System.out.println("Player 1 = Bamboa");
+            whichPlayer1 = false;
+        } else {
+            player2 = new Pokemon("Bamboa"); 
+            System.out.println("Player 2 = Bamboa");
+            f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
+        }
+        //System.exit(1);
        }
       });
       
       b3.addActionListener(new ActionListener() {
        public void actionPerformed(ActionEvent e) {
-        chosenName = "Flamiplume";
-        System.out.println("Flamiplume has been chosen.");
-        
+        if(whichPlayer1) {
+            player1 = new Pokemon("Flamiplume");      
+            System.out.println("Player 1 = Flamiplume");
+            whichPlayer1 = false;
+        } else {
+            player2 = new Pokemon("Flamiplume"); 
+            System.out.println("Player 2 = Flamiplume");
+            f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
+        }
         //System.exit(1);
        }
 
@@ -54,10 +79,16 @@ import java.awt.event.*;
       
       b4.addActionListener(new ActionListener() {
        public void actionPerformed(ActionEvent e) {
-        chosenName = "Hyedrill";
-        System.out.println("Hyedrill has been chosen.");
-        
-           //     System.exit(1);
+        if(whichPlayer1) {
+            player1 = new Pokemon("Hyedrill");      
+            System.out.println("Player 1 = Hyedrill");
+            whichPlayer1 = false;
+        } else {
+            player2 = new Pokemon("Hyedrill"); 
+            System.out.println("Player 2 = Hyedrill");
+            f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
+        }
+        //System.exit(1);
        }
       });
       p.add(b1);
