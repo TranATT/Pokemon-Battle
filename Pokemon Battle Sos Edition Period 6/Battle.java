@@ -3,9 +3,8 @@ import java.awt.event.*;
     public class Battle {
      private Pokemon player1;
      private Pokemon player2;
-     private String chosenName;
      public Battle() {
-      choose();
+      choose(player1);
       player1  = new Pokemon(chosenName);
       choose();
       player2  = new Pokemon(chosenName);
@@ -14,7 +13,7 @@ import java.awt.event.*;
       System.out.println("Player two is " + player2.getName());
      }
 
-     public void choose() {
+     public P choose(Pokemon player) {
       JFrame f = new JFrame("Pokemon Selection");
       f.setVisible(true);
       f.setSize(400, 400);
@@ -29,8 +28,7 @@ import java.awt.event.*;
       b1.addActionListener(new ActionListener() {
        public void actionPerformed(ActionEvent e) {
         chosenName = "Sos Boss";
-        System.out.println("Sos Boss has been chosen.");
-        
+        player = new Pokemon("Sos Boss");        
         //System.exit(1);
        }
       });
