@@ -9,14 +9,16 @@ import java.lang.NullPointerException;
      
      public Battle() 
      {
-         choose();
-         choose();
+        choose();
+        choose();
      
          try {
              System.out.println("Player one is " + player1.getName());
              System.out.println("Player two is " + player2.getName());      
         } catch (NullPointerException e){
         }
+        
+        
      }
 
      public void choose() {
