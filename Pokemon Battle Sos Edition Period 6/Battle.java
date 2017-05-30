@@ -61,7 +61,6 @@ public void choose() {
                                 } else{
                                         player2 = new Pokemon("Sos Boss");
                                         System.out.println("Player 2 = Sos Boss");
-                                        f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
                                 }
                                 //System.exit(1);
                         }
@@ -76,7 +75,7 @@ public void choose() {
                                 } else {
                                         player2 = new Pokemon("Andy");
                                         System.out.println("Player 2 = Andy");
-                                        f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
+
                                 }
                                 //System.exit(1);
                         }
@@ -91,7 +90,6 @@ public void choose() {
                                 } else {
                                         player2 = new Pokemon("Lion King");
                                         System.out.println("Player 2 = Lion King");
-                                        f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
                                 }
                                 //System.exit(1);
                         }
@@ -107,7 +105,6 @@ public void choose() {
                                 } else {
                                         player2 = new Pokemon("Liam");
                                         System.out.println("Player 2 = Liam");
-                                        f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
                                 }
                                 //System.exit(1);
                         }
@@ -122,7 +119,6 @@ public void choose() {
                                 } else {
                                         player2 = new Pokemon("Nero");
                                         System.out.println("Player 2 = Nero");
-                                        f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
                                 }
                                 //System.exit(1);
                         }
@@ -137,7 +133,6 @@ public void choose() {
                                 } else {
                                         player2 = new Pokemon("Flamiplume");
                                         System.out.println("Player 2 = Flamiplume");
-                                        f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
                                 }
                                 //System.exit(1);
                         }
@@ -152,7 +147,6 @@ public void choose() {
                                 } else {
                                         player2 = new Pokemon("Rico");
                                         System.out.println("Player 2 = Rico");
-                                        f.dispatchEvent(new WindowEvent(f, WindowEvent.WINDOW_CLOSING));
                                 }
                                 //System.exit(1);
                         }
@@ -185,7 +179,6 @@ public void move(Pokemon player, Pokemon target) {
                         public void actionPerformed(ActionEvent e) {
                                 player.tackle(target);
                                 turn1 = !turn1;
-                                moveset.dispatchEvent(new WindowEvent(moveset, WindowEvent.WINDOW_CLOSING));
                         }
                 });
 
@@ -193,7 +186,6 @@ public void move(Pokemon player, Pokemon target) {
                         public void actionPerformed(ActionEvent e) {
                                 player.heal(player);
                                 turn1 = !turn1;
-                                moveset.dispatchEvent(new WindowEvent(moveset, WindowEvent.WINDOW_CLOSING));
                         }
                 });
 
@@ -201,7 +193,6 @@ public void move(Pokemon player, Pokemon target) {
                         public void actionPerformed(ActionEvent e) {
                                 player.headbutt(target);
                                 turn1 = !turn1;
-                                moveset.dispatchEvent(new WindowEvent(moveset, WindowEvent.WINDOW_CLOSING));
 
                         }
                 });
@@ -210,7 +201,6 @@ public void move(Pokemon player, Pokemon target) {
                         public void actionPerformed(ActionEvent e) {
                                 player.growl();
                                 turn1 = !turn1;
-                                moveset.dispatchEvent(new WindowEvent(moveset, WindowEvent.WINDOW_CLOSING));
 
                         }
                 });
@@ -219,7 +209,6 @@ public void move(Pokemon player, Pokemon target) {
                         public void actionPerformed(ActionEvent e) {
                                 player.fireball(target);
                                 turn1 = !turn1;
-                                moveset.dispatchEvent(new WindowEvent(moveset, WindowEvent.WINDOW_CLOSING));
 
                         }
                 });
@@ -228,7 +217,6 @@ public void move(Pokemon player, Pokemon target) {
                         public void actionPerformed(ActionEvent e) {
                                 player.punch(target);
                                 turn1 = !turn1;
-                                moveset.dispatchEvent(new WindowEvent(moveset, WindowEvent.WINDOW_CLOSING));
 
                         }
                 });
@@ -237,7 +225,6 @@ public void move(Pokemon player, Pokemon target) {
                         public void actionPerformed(ActionEvent e) {
                                 player.whip(target);
                                 turn1 = !turn1;
-                                moveset.dispatchEvent(new WindowEvent(moveset, WindowEvent.WINDOW_CLOSING));
                         }
                 });
 
