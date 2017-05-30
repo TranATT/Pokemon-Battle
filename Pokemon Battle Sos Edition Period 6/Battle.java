@@ -15,24 +15,39 @@ public static void main(String[] args){
         Battle first = new Battle();
 }
 
+public void attacks(){
+        while (whichPlayer1 == false && (player1.getHP() > 0 || player2.getHP() > 0)) {
+                System.out.println("testWhile");
+
+                if (turn1) {
+                        move(player1, player2);
+                        System.out.println("testTurn1");
+                } else {
+                        move(player2, player1);
+                        System.out.println("testTurn2");
+                }
+        }
+}
+
 public Battle()
 {
+        player1 = new Pokemon();
+        player2 = new Pokemon();
         choose();
         choose();
 
-        try {
-                System.out.println("Player one is " + player1.getName());
-                System.out.println("Player two is " + player2.getName());
-                while (player1.getHP() > 0 || player2.getHP() > 0) {
-                        if (turn1) {
-                                move(player1, player2);
-                        } else {
-                                move(player2, player1);
-                        }
-                }
 
-        } catch (NullPointerException e) {
-        }
+        System.out.println("Player one is " + player1.getName());
+        System.out.println("Player two is " + player2.getName());
+        turn1 = true;
+        //if(whichPlayer1 == false){
+
+        //}
+
+
+
+
+
 
 
 }
@@ -55,13 +70,15 @@ public void choose() {
         b1.addActionListener(new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
                                 if(whichPlayer1) {
-                                        player1 = new Pokemon("Sos Boss");
+                                        player1.construct("Sos Boss");
                                         System.out.println("Player 1 = Sos Boss");
                                         whichPlayer1 = false;
                                 } else{
-                                        player2 = new Pokemon("Sos Boss");
+                                        player2.construct("Sos Boss");
                                         System.out.println("Player 2 = Sos Boss");
+                                        attacks();
                                 }
+
                                 //System.exit(1);
                         }
                 });
@@ -69,12 +86,13 @@ public void choose() {
         b2.addActionListener(new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
                                 if(whichPlayer1) {
-                                        player1 = new Pokemon("Andy");
+                                        player1.construct("Andy");
                                         System.out.println("Player 1 = Andy");
                                         whichPlayer1 = false;
                                 } else {
-                                        player2 = new Pokemon("Andy");
+                                        player2.construct("Andy");
                                         System.out.println("Player 2 = Andy");
+                                        attacks();
 
                                 }
                                 //System.exit(1);
@@ -84,12 +102,13 @@ public void choose() {
         b3.addActionListener(new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
                                 if(whichPlayer1) {
-                                        player1 = new Pokemon("Lion King");
+                                        player1.construct("Lion King");
                                         System.out.println("Player 1 = Lion King");
                                         whichPlayer1 = false;
                                 } else {
-                                        player2 = new Pokemon("Lion King");
+                                        player2.construct("Lion King");
                                         System.out.println("Player 2 = Lion King");
+                                        attacks();
                                 }
                                 //System.exit(1);
                         }
@@ -99,12 +118,13 @@ public void choose() {
         b4.addActionListener(new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
                                 if(whichPlayer1) {
-                                        player1 = new Pokemon("Liam");
+                                        player1.construct("Liam");
                                         System.out.println("Player 1 = Liam");
                                         whichPlayer1 = false;
                                 } else {
-                                        player2 = new Pokemon("Liam");
+                                        player2.construct("Liam");
                                         System.out.println("Player 2 = Liam");
+                                        attacks();
                                 }
                                 //System.exit(1);
                         }
@@ -113,12 +133,13 @@ public void choose() {
         b5.addActionListener(new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
                                 if(whichPlayer1) {
-                                        player1 = new Pokemon("Nero");
+                                        player1.construct("Nero");
                                         System.out.println("Player 1 = Nero");
                                         whichPlayer1 = false;
                                 } else {
-                                        player2 = new Pokemon("Nero");
+                                        player2.construct("Nero");
                                         System.out.println("Player 2 = Nero");
+                                        attacks();
                                 }
                                 //System.exit(1);
                         }
@@ -127,12 +148,13 @@ public void choose() {
         b6.addActionListener(new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
                                 if(whichPlayer1) {
-                                        player1 = new Pokemon("Flamiplume");
+                                        player1.construct("Flamiplume");
                                         System.out.println("Player 1 = Flamiplume");
                                         whichPlayer1 = false;
                                 } else {
-                                        player2 = new Pokemon("Flamiplume");
+                                        player2.construct("Flamiplume");
                                         System.out.println("Player 2 = Flamiplume");
+                                        attacks();
                                 }
                                 //System.exit(1);
                         }
@@ -141,12 +163,13 @@ public void choose() {
         b7.addActionListener(new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
                                 if(whichPlayer1) {
-                                        player1 = new Pokemon("Rico");
+                                        player1.construct("Rico");
                                         System.out.println("Player 1 = Rico");
                                         whichPlayer1 = false;
                                 } else {
-                                        player2 = new Pokemon("Rico");
+                                        player2.construct("Rico");
                                         System.out.println("Player 2 = Rico");
+                                        attacks();
                                 }
                                 //System.exit(1);
                         }
@@ -166,7 +189,7 @@ public void move(Pokemon player, Pokemon target) {
         moveset.setVisible(true);
         moveset.setSize(400, 400);
         moveset.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel moveWind = new JPanel();
+        JPanel k = new JPanel();
 
         JButton tackle = new JButton("tackle");
         JButton heal = new JButton("heal");
@@ -175,10 +198,12 @@ public void move(Pokemon player, Pokemon target) {
         JButton fireball = new JButton("fireball");
         JButton punch = new JButton("punch");
         JButton whip = new JButton("whip");
+        System.out.println("testm1");
         tackle.addActionListener(new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
                                 player.tackle(target);
                                 turn1 = !turn1;
+                                System.out.println("testm2");
                         }
                 });
 
@@ -229,48 +254,62 @@ public void move(Pokemon player, Pokemon target) {
                 });
 
 
-        if (player.getName().equals("Sos Boss")) {
-                moveWind.add(tackle);
-                moveWind.add(headbutt);
-                moveWind.add(fireball);
-                moveWind.add(punch);
+        if (player1.getName().equals("Sos Boss")) {
+                System.out.println("testm3");
+                k.add(tackle);
+                k.add(headbutt);
+                k.add(fireball);
+                k.add(punch);
+                moveset.add(k);
+
         }
         if (player.getName().equals("Andy")) {
-                moveWind.add(tackle);
-                moveWind.add(heal);
-                moveWind.add(headbutt);
-                moveWind.add(growl);
+                k.add(tackle);
+                k.add(heal);
+                k.add(headbutt);
+                k.add(growl);
+                moveset.add(k);
+
         }
         if (player.getName().equals("Lion King")) {
-                moveWind.add(tackle);
-                moveWind.add(headbutt);
-                moveWind.add(fireball);
-                moveWind.add(punch);
+                k.add(tackle);
+                k.add(headbutt);
+                k.add(fireball);
+                k.add(punch);
+                moveset.add(k);
+
         }
         if (player.getName().equals("Liam")) {
-                moveWind.add(tackle);
-                moveWind.add(growl);
-                moveWind.add(punch);
-                moveWind.add(whip);
+                k.add(tackle);
+                k.add(growl);
+                k.add(punch);
+                k.add(whip);
+                moveset.add(k);
+
         }
         if (player.getName().equals("Nero")) {
-                moveWind.add(tackle);
-                moveWind.add(heal);
-                moveWind.add(fireball);
-                moveWind.add(punch);
+                k.add(tackle);
+                k.add(heal);
+                k.add(fireball);
+                k.add(punch);
+                moveset.add(k);
+
         }
         if (player.getName().equals("Flamiplume")) {
-                moveWind.add(tackle);
-                moveWind.add(headbutt);
-                moveWind.add(fireball);
-                moveWind.add(growl);
+                k.add(tackle);
+                k.add(headbutt);
+                k.add(fireball);
+                k.add(growl);
+                moveset.add(k);
+
         }
         if (player.getName().equals("Rico")) {
-                moveWind.add(tackle);
-                moveWind.add(heal);
-                moveWind.add(fireball);
-                moveWind.add(headbutt);
+                k.add(tackle);
+                k.add(heal);
+                k.add(fireball);
+                k.add(headbutt);
+                moveset.add(k);
+
         }
-        moveset.add(moveWind);
 }
 }
